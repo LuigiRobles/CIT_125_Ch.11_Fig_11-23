@@ -1,6 +1,6 @@
 // CIT 125 Intro To C++ Luigi Robles
 // 07-24-2020 Summer Term
-// Ch.11 Figure 11-23
+// Ch.11 Pg.389 Figure 11-23
 // gets and displays number of people whose Facebook time
 // exceeds a specific number of minutes
 
@@ -8,7 +8,7 @@
 using namespace std;
 
 int main()
-{	//array declaration
+{	//declare and initialize int array
 	int pollResults[25] = { 35,120,75,60,20,
 							25,15,90,85,35,
 							60,15,10,25,60,
@@ -21,7 +21,7 @@ int main()
 
 	//input part of IPO
 	cout << "Search for minutes over: ";
-	cin >> minutes;
+	cin >> minutes; //input minutes over to search arrary for
 
 	//search the array
 	for (int sub = 0; sub < 25; sub += 1)
@@ -31,8 +31,8 @@ int main()
 	//end for 
 
 	//output part of IPO
-	cout << endl << "Number who spend more than " << minutes
+	cout << endl << "Number who spend more than " << minutes //output for minutes over entered
 		<< " minutes" << endl;
-	cout << "per day on Facebook: " << numOVer << endl;
+	cout << "per day on Facebook: " << numOVer << endl; //output for number over minutes entered
 	return 0;
 }	//end of main function
